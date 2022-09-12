@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # Set Variables
 raw_ver=$(curl -sL https://api.github.com/repos/hashicorp/terraform/releases/latest | jq -r ".tag_name")
