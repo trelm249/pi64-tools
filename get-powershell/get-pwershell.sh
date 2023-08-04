@@ -1,6 +1,8 @@
 #!/bin/bash
 # Get Powershell
 
+# install prereqs
+apt install ca-certificates gss-ntlmssp libicu67 libssl1.1 libc6 libgcc1 libgssapi-krb5-2 libstdc++6 zlib1g -y
 # set variables
 ps_ver=$(curl -sL https://api.github.com/repos/PowerShell/PowerShell/releases/latest | jq -r ".tag_name")
 sps_ver=${ps_ver:1}
